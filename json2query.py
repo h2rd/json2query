@@ -44,8 +44,8 @@ def generate(source):
 
     return _generate_dict(source)
 
-def main(source):
-    return generate(json.loads(source))
+def main():
+    return generate(json.loads(sys.stdin.read()))
 
 if __name__ == '__main__':
-    print main(sys.stdin.read())
+    print main()

@@ -10,7 +10,7 @@ Json to query url
 
 """
 
-from setuptools import setup, find_packages
+from setuptools import setup
 
 setup(
     name='json2query',
@@ -21,7 +21,7 @@ setup(
     license="MIT",
     url='Json to query url',
     version='0.1',
-    packages=find_packages(),
+    py_modules=['json2query'],
     test_suite='tests',
     entry_points={
         'console_scripts': [
